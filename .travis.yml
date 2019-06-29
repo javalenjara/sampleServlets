@@ -1,6 +1,5 @@
 ## YAML Template.
 language: java
-
 addons:
     sonarcloud:
         organization: "javalenjara-github"
