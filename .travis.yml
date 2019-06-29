@@ -3,8 +3,8 @@ language: java
 
 addons:
     sonarcloud:
-        organization: javalenjara-github
+        organization: "javalenjara-github"
         token:
-            secure: "n1to6c8IzYuKoGbAR5IntbwNApemF2bkju0Ipmu2qEiATF1isHwYS+BwEhuYp8p/R/wIxo6JVHYJLtdVQ6YVRCzrnBx416RYsly44+QtA/o9DUKrjyrNBnOYD1/kzWdeOXOT236kDipthP9iqa7cOXSUvMb5VuxnC80w2WWUIBB15hcKoYsGZbGTvzDRkAN/ja8qrdbChprkGRXW9Tmlht1qmjtpF1FImiIObvHJjGeg+zOf/3H0yDE9WRWQNJnDgIwMSwzVmP9R8yQRXOkNdSkGTEvkSv5SpH3ZExLzmINIqf4jAMNznZpQY0VpHnVMGDWMXm5iUft3NuMTpNLPpfWJP75I2TEn4xdTMvp5gIgtFn1fSWBecLpBUXNFogew1BVq16SU4/cTWe+BH1h0hPpDN7plrEu6tf/PBMe4aZR4L2FXBSpXlDPRRn5o3/Q15EMZTYo/nVWd2QMPTuPxu9NFs+ZsjZdc6V+z/Fwl5VfmOyymNzBjV1/ikPjNbKgodrMC0JeqTVSM34c6ZOBWHrV6cvnanEzqKj/bXVey8XD2v5aCKeN/+wd8QVZMrLFMbnWFNIIlpCqpj5rAAglgqxfa9UtGyEwoK/EClYWzj+G1LFVZNFDdWEjpx2HkmmikjDQ3MCnWtEVe+iRX8MR0d5/sWiGATntvlMK39CPFhGw="
+            secure: n1to6c8IzYuKoGbAR5IntbwNApemF2bkju0Ipmu2qEiATF1isHwYS+BwEhuYp8p/R/wIxo6JVHYJLtdVQ6YVRCzrnBx416RYsly44+QtA/o9DUKrjyrNBnOYD1/kzWdeOXOT236kDipthP9iqa7cOXSUvMb5VuxnC80w2WWUIBB15hcKoYsGZbGTvzDRkAN/ja8qrdbChprkGRXW9Tmlht1qmjtpF1FImiIObvHJjGeg+zOf/3H0yDE9WRWQNJnDgIwMSwzVmP9R8yQRXOkNdSkGTEvkSv5SpH3ZExLzmINIqf4jAMNznZpQY0VpHnVMGDWMXm5iUft3NuMTpNLPpfWJP75I2TEn4xdTMvp5gIgtFn1fSWBecLpBUXNFogew1BVq16SU4/cTWe+BH1h0hPpDN7plrEu6tf/PBMe4aZR4L2FXBSpXlDPRRn5o3/Q15EMZTYo/nVWd2QMPTuPxu9NFs+ZsjZdc6V+z/Fwl5VfmOyymNzBjV1/ikPjNbKgodrMC0JeqTVSM34c6ZOBWHrV6cvnanEzqKj/bXVey8XD2v5aCKeN/+wd8QVZMrLFMbnWFNIIlpCqpj5rAAglgqxfa9UtGyEwoK/EClYWzj+G1LFVZNFDdWEjpx2HkmmikjDQ3MCnWtEVe+iRX8MR0d5/sWiGATntvlMK39CPFhGw=
 script:
     - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
