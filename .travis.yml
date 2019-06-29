@@ -2,6 +2,8 @@
 language: java
 addons:
     sonarcloud:
-        organization: javalenjara-github
+        organization: "javalenjara-github"
+        token:
+            secure: nCvPwzNycZaDptrh0nKovPwjsE3+P2+ACXUgW/zS4oQimWRHOTB4RGJ2wx6Gqf+1V0d8HFvZIh88adD7PO7sqcUWtoUoYnAYN4ksnN216Jc8+U2chXJoUnz157+6JpT9PzMLGzcmBccVuleBwX/OcavErEVYpUtx+EuGrPeL5Fc0T/RnQhEamcIoaOr9nD3udTsdTXk9GozAzIxzsTnyxlUpBUmz1IKi1iQSDqcIAx8jzOHIZ4khCagA0D6qYosWVH1UvcatD/C/irKX89SiqSTtmEN7lPy4jyyJ2TRkaT6jzTSmYoL3R3Vp8G64igvdSVSapeqntqpOJpybNFvSj8U2fOeWGgM8l/H4CdivcgV9C+bV4+/GznGruDsAfSd6OWaO64zV3wtyZDqQPDITZa1FaDU9iiq0ota1rapxIIVPe+OePrpkLVp2dp2Tf2bRSNE+dLF2aqKQfrX+aPYr6r6QcSwbHj+NNZO+I6bT/t4FyoFyYdHoLeeafD2IQFMTeUv8Zwufk4WDUCTH7NQHOUhwHPMhAvO0vATZqSSxA8eL3aJyCDOQYV5t0L2oDBDh9/WTxoIF6kH9hEitiiTR43CC4dzaHq3CwTlkAignWCVwjBSUK5AyDMDluJJ66bvShuhGvumSY4mTTkGKUBNv7lgYoqYQyynm2mB8Px0ORNI=
 script:
-    - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.login=${e7b3171f12893be80412c5c0e80a190da193a91f}
+- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
